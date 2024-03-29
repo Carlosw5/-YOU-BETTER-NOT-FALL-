@@ -25,6 +25,7 @@
     {"name":"rm_start","order":3,"path":"rooms/rm_start/rm_start.yy",},
     {"name":"sInvisibleWall","order":2,"path":"sprites/sInvisibleWall/sInvisibleWall.yy",},
     {"name":"sBackground","order":8,"path":"sprites/sBackground/sBackground.yy",},
+    {"name":"obj_control","order":5,"path":"objects/obj_control/obj_control.yy",},
     {"name":"obj_game","order":4,"path":"objects/obj_game/obj_game.yy",},
     {"name":"sPlayer","order":1,"path":"sprites/sPlayer/sPlayer.yy",},
     {"name":"oWallneg","order":3,"path":"objects/oWallneg/oWallneg.yy",},

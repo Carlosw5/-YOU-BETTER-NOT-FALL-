@@ -1,1 +1,2 @@
 randomize();
+points = 0

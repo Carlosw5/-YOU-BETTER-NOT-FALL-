@@ -1,6 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
+if(points == 3){
+	room_goto(Room2)
+}
 
 

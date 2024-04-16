@@ -46,24 +46,44 @@ y = y + vsp;
 
 if (place_meeting(x+hsp,y,obj_powers))
 {
-	while (!place_meeting(x+sign(hsp),y,obj_powers))
-	{
-		x = x + sign(hsp);
-	}
-	hsp = 0;
+	points += 1;
+	instance_destroy(obj_powers)
 }
-x = x + hsp;
-
+	
 //Vertical collision
-if (place_meeting(x,y+vsp,obj_powers))
+if (place_meeting(x,y+vsp,obj_powers1))
 {
-	while (!place_meeting(x,y+sign(vsp),obj_powers))
-	{
-		y = y + sign(vsp);
-	}
-	vsp = 0;
+	points += 1;
+	instance_destroy(obj_powers1)
 }
-y = y + vsp;
 
 
+if (place_meeting(x+hsp,y,obj_powers1))
+{
+	points += 1;
+	instance_destroy(obj_powers1)
+}
+	
+//Vertical collision
+if (place_meeting(x,y+vsp,obj_powers2))
+{
+	points += 1;
+	instance_destroy(obj_powers2)
+}
 
+if (place_meeting(x+hsp,y,obj_powers2))
+{
+	points += 1;
+	instance_destroy(obj_powers2)
+}
+	
+//Vertical collision
+if (place_meeting(x,y+vsp,obj_powers2))
+{
+	points += 1;
+	instance_destroy(obj_powers2)
+}
+
+if(points == 3){
+	room_goto(Room2)
+}

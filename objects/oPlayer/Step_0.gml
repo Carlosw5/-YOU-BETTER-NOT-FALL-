@@ -87,3 +87,20 @@ if (place_meeting(x,y+vsp,obj_powers2))
 if(points == 3){
 	room_goto(Room2)
 }
+
+if (place_meeting(x+hsp,y,obj_key))
+{
+	key_count += 1;
+	instance_destroy(obj_key)
+}
+	
+//Vertical collision
+if (place_meeting(x,y+vsp,obj_key))
+{
+	key_count += 1;
+	instance_destroy(obj_key)
+}
+
+if(key_count == 1){
+	room_goto(Room3)
+}

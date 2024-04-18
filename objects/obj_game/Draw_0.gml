@@ -5,10 +5,7 @@ case rm_start:
     var c = c_purple;
     draw_text_transformed_colour(room_width / 2, 300, "YOU BETTER NOT FALL!", 3, 3, 0, c, c, c, c, 1);
     draw_text(room_width / 2, 400, 
-    @"Score 2,000 points to win!
-    
-    LEFT/RIGHT: move
-    SPACE: shoot the ball
+    @"IF YOU FALL YOU DIE!!!!
     
     |>>PRESS ENTER TO START<<|");
     draw_set_halign(fa_left);

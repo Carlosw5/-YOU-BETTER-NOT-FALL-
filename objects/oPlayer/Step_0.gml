@@ -106,3 +106,22 @@ if(key_count == 1){
 }
 
 
+
+if (place_meeting(x+hsp,y,Object10))
+{
+	t_pole += 1;
+	instance_destroy(Object10)
+}
+	
+//Vertical collision
+if (place_meeting(x,y+vsp,Object10))
+{
+	t_pole += 1;
+	instance_destroy(Object10)
+}
+
+if(t_pole == 1){
+	room_goto(rm_win)
+}
+
+

@@ -10,3 +10,4 @@ currjumps = 0;
 points = 0
 key_count = 0
 
+t_pole = 0

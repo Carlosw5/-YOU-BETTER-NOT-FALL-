@@ -11,10 +11,6 @@ case rm_start:
     draw_set_halign(fa_left);
     break;
 
-case rm_start:
-    draw_text(20, 20, "SCORE: " + string(score));
-    draw_text(20, 40, "LIVES: " + string(lives));
-    break;
 
 case rm_win:
     draw_set_halign(fa_center);

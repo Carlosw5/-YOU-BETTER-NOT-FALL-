@@ -125,3 +125,24 @@ if(t_pole == 1){
 }
 
 
+
+
+
+
+if (place_meeting(x+hsp,y,obj_enemy))
+{
+	pDead += 1;
+	instance_destroy(oPlayer)
+}
+	
+//Vertical collision
+if (place_meeting(x,y+vsp,obj_enemy))
+{
+	pDead += 1;
+	instance_destroy(oPlayer)
+}
+
+if(pDead == 1){
+	room_goto(rm_start)
+}
+
